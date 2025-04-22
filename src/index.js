@@ -7,6 +7,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Login from "./components/Login";
 import Register from "./components/Register";
 import Dashboard from "./components/Dashboard";
+import Projects from "./components/Projects";
+import Tasks from "./components/Tasks";
 
 function App() {
     return (
@@ -16,6 +18,8 @@ function App() {
                     <Route path="/" element={<Login />} />
                     <Route path="/register" element={<Register />} />
                     <Route path="/dashboard" element={<Dashboard />} />
+                    <Route path="/projects" element={<Projects />} />
+                    <Route path="/tasks" element={<Tasks />} />
                 </Routes>
             </Suspense>
         </Router>
