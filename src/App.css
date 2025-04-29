@@ -2,6 +2,8 @@
   text-align: center;
 }
 
+
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +37,65 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.BudgetTracker {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.BudgetTracker h1 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.BudgetTracker-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.BudgetTracker-form input,
+.BudgetTracker-form button {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.BudgetTracker-form button {
+  background-color: #61dafb;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.BudgetTracker-form button:hover {
+  background-color: #21a1f1;
+}
+
+.BudgetTracker-list {
+  margin-top: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.BudgetTracker-list-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.BudgetTracker-list-item span {
+  font-size: 1rem;
+  color: #555;
 }
