@@ -3,9 +3,9 @@ import React, { useState } from 'react';
 const BudgetTracker = () => {
     const [expenses, setExpenses] = useState([]);
     const [expenseName, setExpenseName] = useState('');
-    const [expenseAmount, setExpenseAmount] = useState('');
+    const [expenseAmount, setExpenseAmount] = useState(0);
     const [budget, setBudget] = useState('');
-
+    // Backend API integration removed. All state and logic are handled locally.
     const addExpense = () => {
         if (expenseName && expenseAmount) {
             setExpenses([...expenses, { name: expenseName, amount: parseFloat(expenseAmount) }]);
