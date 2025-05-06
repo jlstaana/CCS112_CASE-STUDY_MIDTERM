@@ -1,0 +1,69 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+}
+
+.upload-area {
+  border: 2px dashed #007bff;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px 0;
+  transition: background-color 0.3s;
+}
+
+.upload-area:hover {
+  background-color: #e9ecef;
+}
+
+.upload-progress {
+  height: 20px;
+  background-color: #007bff;
+  transition: width 0.3s;
+}
+
+.file-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.file-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.file-item button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.file-item button:hover {
+  background-color: #c82333;
+}
+
+.download-link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.download-link:hover {
+  text-decoration: underline;
+}
